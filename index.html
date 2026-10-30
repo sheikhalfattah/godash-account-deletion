@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#031134">
+  <meta name="description" content="Request deletion of your GoDash account and associated cloud data.">
+  <title>GoDash Account Deletion | ALFA Labs</title>
+  <style>
+    :root {
+      color-scheme: dark;
+      --navy: #031134;
+      --card: #0f1b36;
+      --cyan: #22d3ee;
+      --cyan-light: #a5f3fc;
+      --yellow: #ffb800;
+      --white: #f8fafc;
+      --muted: #a7b3c8;
+      --line: rgba(34,211,238,.25);
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0; min-height: 100vh; padding: 28px 16px;
+      display: grid; place-items: center;
+      background: radial-gradient(ellipse at top, #102b5c 0%, var(--navy) 58%);
+      color: var(--white);
+      font: 16px/1.65 system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+    }
+    main {
+      width: min(100%, 680px); padding: clamp(24px, 5vw, 42px);
+      background: var(--card); border: 1px solid var(--line);
+      border-radius: 22px; box-shadow: 0 22px 70px rgba(0,0,0,.35);
+    }
+    header { text-align: center; margin-bottom: 30px; }
+    .brand {
+      color: var(--cyan-light); font-size: .78rem; font-weight: 800;
+      letter-spacing: .2em; text-transform: uppercase;
+    }
+    h1 {
+      margin: 9px 0 8px; color: var(--yellow);
+      font-size: clamp(1.8rem, 6vw, 2.45rem); line-height: 1.15;
+    }
+    .subtitle { color: var(--muted); margin: 0; }
+    h2 { margin: 25px 0 8px; color: var(--cyan-light); font-size: 1.08rem; }
+    p { margin: 8px 0 12px; }
+    ul { margin: 8px 0 12px; padding-left: 22px; color: #d5deeb; }
+    li { margin: 6px 0; }
+    .panel {
+      margin: 22px 0; padding: 17px 18px;
+      border: 1px solid var(--line); border-left: 4px solid var(--cyan);
+      border-radius: 12px; background: rgba(3,17,52,.55);
+    }
+    .panel strong { color: var(--cyan-light); }
+    .button {
+      display: inline-flex; justify-content: center; align-items: center;
+      width: 100%; min-height: 52px; margin-top: 14px; padding: 13px 18px;
+      border-radius: 12px; background: var(--yellow); color: #101b32;
+      font-weight: 850; text-decoration: none; text-align: center;
+      transition: filter .15s ease, transform .15s ease;
+    }
+    .button:hover { filter: brightness(1.06); }
+    .button:active { transform: translateY(1px); }
+    .small { color: var(--muted); font-size: .9rem; }
+    footer {
+      margin-top: 30px; padding-top: 18px; border-top: 1px solid rgba(255,255,255,.1);
+      color: var(--muted); text-align: center; font-size: .82rem;
+    }
+    a.inline { color: var(--cyan-light); }
+    @media (max-width: 420px) { body { padding: 14px 10px; } main { border-radius: 16px; } }
+  </style>
+</head>
+<body>
+<main>
+  <header>
+    <div class="brand">ALFA Labs</div>
+    <h1>GoDash Account Deletion</h1>
+    <p class="subtitle">Request deletion of your GoDash account and associated cloud data.</p>
+  </header>
+
+  <section>
+    <h2>How to request deletion</h2>
+    <p>To request deletion, contact the GoDash support address using the button below. Send the request from the email address associated with your GoDash account, if possible.</p>
+    <p>Include your in-game Player ID, if you know it. <strong>Never send your Google password or payment-card details.</strong></p>
+    <a class="button" id="request-link" href="mailto:alfalabs.hq@gmail.com?subject=GoDash%20Account%20Deletion%20Request&body=I%20would%20like%20to%20request%20deletion%20of%20my%20GoDash%20account.%0A%0AAccount%20email%3A%20%0APlayer%20ID%20(if%20known)%3A%20%0A">
+      Email an account deletion request
+    </a>
+    <p class="small">This opens your email app with a request template. Your request is not submitted until you send the email.</p>
+  </section>
+
+  <div class="panel">
+    <strong>What happens next?</strong>
+    <p>ALFA Labs will review your request and may contact you to verify that you own the account. We will confirm receipt and explain the expected processing time. Submitting this email does not itself delete your account.</p>
+  </div>
+
+  <section>
+    <h2>What data may be deleted?</h2>
+    <p>After your identity is verified and the request is processed, deletion may include account-associated data held by GoDash, such as:</p>
+    <ul>
+      <li>Cloud-saved game progress and best scores.</li>
+      <li>Cloud-stored currency balances and game preferences.</li>
+      <li>Unlocked cosmetics and other account-linked game data.</li>
+      <li>Other personal data associated with the GoDash account that ALFA Labs controls.</li>
+    </ul>
+    <p>Some records may need to be retained where required by law or for legitimate security, fraud-prevention, or transaction-record purposes. If any data is retained, the reason and applicable retention period should be explained to you.</p>
+    <p>Data held independently by Google Play Games or other third-party services is managed under those services' own settings and policies; this request cannot guarantee deletion of records controlled by those providers.</p>
+  </section>
+
+  <section>
+    <h2>Need help?</h2>
+    <p>Use the email button above and select “GoDash Account Deletion Request” as the subject. For account verification, ALFA Labs may ask for limited information needed to identify the account.</p>
+  </section>
+
+  <footer>
+    &copy; 2026 ALFA Labs. GoDash account deletion information.
+  </footer>
+</main>
+</body>
+</html>
